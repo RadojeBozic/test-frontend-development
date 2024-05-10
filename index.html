@@ -3,123 +3,73 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>HTML Vezbe</title>
-	<style type="text/css">
-		#wrapp {
-			width: 700px;
-			height: 500px; 
-			background-color: aqua;
-			padding: 20px;
-
-		}
-		#div1 {
-			width: 700px;
-			height: 100px;
-			border: 1px solid red;
-			margin: 10px;
-			background-color: #777777;
-			opacity: 0.4;
-			float: left;
-		}
-		#div {
-			padding: 50px;
-			background-color: #888888;
-			margin-top: 250px;
-		}
-		a:link,  a visited {
-		background-color: tomato;
-		color: white;
-		padding: 15px 25px;
-		margin: 15px 15px;
-		text-decoration: none;
-		display: inline-block;
-		}
-		a:hover, a:active {
-			background-color: red;
-
-		}
-		img {
-			float: right;
-			margin: 20px;
-		} 
-		body {
-			background-image: url('slike/htmlcssjs1.jpg');
-		}
-	</style>
+	<title>Hexa</title>
+	<link rel="stylesheet" href="./css/style.css">
 	
 </head>
 <body>
-	<img src="slike/html.jpg" alt="html slika" title="html" width="300px" height="300px"><br>
-	<hr style="width: 60%; ">
 
-	<a href="#wrapp">Formatiranje teksta</a>
-	<div style="background-color: silver; width: 60%; height: 30px;">
-		<h2>HTML&CSS vezbe</h2>
+	<div class="logo">
+		<img src="./img/logo.png" alt="">
+	</div>
+	<h1>Društvena mreža namenjena poslovanju</h1>
+	<p>pauza na 32:45</p>
+
+	<div class="main-wrapper">
+		<form action="" id="loginform">
+			<h2>Login</h2>
+
+			<div>
+				<label for="login_email">Email:</label>
+				<input type="email" name="email" id="login_email" placeholder="mojmail@mail.com">
+			</div>
+
+			<div>
+				<label for="login_lozinka">Lozinka:</label>
+				<input type="password" name="lozinka" id="login_lozinka" placeholder="********">
+			</div>
+
+			<div>
+				<button>Uloguj se</button>
+			</div>
+		</form>
 	</div>
 
-	<div id="div">
-		<img src="slike/html_logo.png" alt="html logo" title="html logo">
-	<p style="color:red;">Ovo je crveni paragraf</p>
-
-	<p title="prvi paragraf">Moj prvi <br> paragraf</p>
-	<hr>
-
-	<h1 style="background-color: red;">Velicina naslova pomocu CSS-a</h1>
-	<h1 style="font-size: 60px;">Velicina naslova pomocu CSS-a</h1>
-
-	<pre style="background-color: tomato; font-size: 20px;">
-		moj prvi paragraf
-		treba ovako
-		da bude
-		prelomljen
-	</pre>
-	
-	<hr>
-	<p>Normalan paragraf</p>
-	<p style="color:blue;">Plavi paragraf</p>
-	<p style="color:red;">Crveni paragraf</p>
-	<p style="font-size: 50px;">Veliki paragraf</p>
-
-	<h1>Font teksta</h1>
-	<h1 style="font-family: Arial;">Font teksta Arial</h1>
-	<img src="slike/xhtml-css-banner.png" alt="html css banner" title="html i css banner" width="200px" height="200px">
-
-	<h1 style="text-align:center;">Centriranje naslova i paragrafa</h1>
-	<p style="text-align:center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-	<h1>HTML formatiranje teksta</h1>
-	<img src="slike/htmlcssjs.jpg" alt="htmlcssjs logo" title="html, css i JS logo" width="200px" height="200px">
-	<p><b>Boldovan tekst</b></p>
-	<p><i>Italic iskosen text</i></p>
-	<p>Ovo je <sub>subscriptovan tekst</sub> kao i <sup>superskriptovan tekst</sup>. Moze se koristiti kod hemijskih formula kao H <sub>2</sub>O i kod nekih matematickih funkcija kao 100<sup>4</sup>.</p>
-
-	<p>Ovo je obican tekst</p>
-	<p><strong>Ovo je naglasen tekst</strong></p>
-	<p><em>Element em definise takodje naglasen tekst!</em></p>
-	<p>HTML element small definise <small>manji tekst</small></p>
-	<p>Markiran tekst kada hocemo da istaknemo nesto <mark>vazno!!!</mark></p>
-	<p>HTML element ins definise tekst koji je umetnut u sadrzaj, npr.: Moja omiljena boja je <del>plava</del> <ins>crvena!!!</ins></p>
-
-
-
-	<div id="wrapp">
-		<div id="div1"></div>
-		<h1>HTML formatiranje teksta</h1>
-	<p><b>Boldovan tekst</b></p>
-	<p><i>Italic iskosen text</i></p>
-	<p>Ovo je <sub>subscriptovan tekst</sub> kao i <sup>superskriptovan tekst</sup>. Moze se koristiti kod hemijskih formula kao H <sub>2</sub>O i kod nekih matematickih funkcija kao 100<sup>4</sup>.</p>
-
-	<p>Ovo je obican tekst</p>
-	<p><strong>Ovo je naglasen tekst</strong></p>
-	<p><em>Element em definise takodje naglasen tekst!</em></p>
-	<p>HTML element small definise <small>manji tekst</small></p>
-	<p>Markiran tekst kada hocemo da istaknemo nesto <mark>vazno!!!</mark></p>
-	<p>HTML element ins definise tekst koji je umetnut u sadrzaj, npr.: Moja omiljena boja je <del>plava</del> <ins>crvena!!!</ins></p>
-
+	<div class="no-acc-register">
+		<p>Nemaš nalog?</p>
+		<button id="registracija">Registruj se</button>
 	</div>
-</div>
-<a href="druga_vezbe.html" target="blank" title="predji na drugu stranicu"><img src="slike/css_logo.png" style="width: 50px;height:50px">CSS VEZBE</a>
 
+	<div class="custom-modal">
+		<button id="closeModal">X</button>
 
+		<form action="" id="registrationForm">
+			<h2>Registracija korisnika</h2>
+			<div>
+				<label for="korisnicko_ime">Korisničko ime</label>
+				<input type="text" id="korisnicko_ime" name="korisnicko_ime" placeholder="moje.ime">
+			</div>
+			
+			<div>
+				<label for="email">Email adresa: *</label>
+				<input type="text" name="register_email" id="email" placeholder="mojmail@mail.com">
+			</div>
+				
+			<div>
+				<label for="lozinka">Lozinka: *</label>
+				<input type="password" name="register_lozinka" id="lozinka" placeholder="********">
+			</div>
+			<div>
+				<label for="ponovi_lozinku">Ponovi lozimku: *</label>
+				<input type="password" name="ponovi_lozinku" id="ponovi_lozinku" placeholder="********">
+			</div>
 
+			<div>
+				<button>Registruj se</button>
+			</div>
+		</form>
+	</div>
+
+	<script src="js/app.js"></script>
 </body>
 </html>
